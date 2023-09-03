@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
+        
+        <meta name="description" content="MULTI-AUDIODEC: BINAURAL HIGH-FIDELITY NEURAL AUDIO CODEC FOR OVERLAPPED SPEECH - Audio Demo">
+        <meta name="author" content="Anton Jeran Ratnarajah">
+        
+	    <title>MULTI-AUDIODEC - Audio Demo</title>
+        
+        <!-- Bootflat CSS -->
+        <link rel="stylesheet" href="css/bootflat.css">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/index.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    </head>
+
+    
+    <body>
+        <div id="container">
+            <div id="paper_title"> <h1>MULTI-AUDIODEC: BINAURAL HIGH-FIDELITY NEURAL AUDIO CODEC FOR OVERLAPPED SPEECH</h1> </div>
+            <div id="paper_authors"> <h3><b>Authors:</b> Anton Ratnarajah, Shi-Xiong Zhang, Yi Luo and Dong Yu</h3></div>
+            <div id="paper_title"> <h2><a href="">Paper</a><a> | </a><a href="https://github.com/anton-jeran/MULTI-AUDIODEC">Code</a>  </a> </h2> </div>
+            <div id="paper_abstract"> <b>Abstract:</b> </div>
+
+           
+        <!--     <div id="code">
+                <h2><b>Github</b></h2>
+                <b>Our github code is available here</b>        
+            </div>
+            -->
+            <div id="demos">
+                <h2>Baselines</h2>
+                <h3>Audio Demos - Single Speaker</h3>
+                
+                <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Audio Codec  </th>
+                            <th style="text-align:center;">Compression&emsp;  </th>
+                            <th style="text-align:center;">Bandwidth&emsp;  </th>
+                            <th style="text-align:center;">Reverb Sample-1</th>
+                            <th style="text-align:center;">Reverb Sample-2</th>
+                            <th style="text-align:center;">Reverb Sample-3</th>
+                            <th style="text-align:center;">Reverb Sample-4</th>                          
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Ground Truth </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> - </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> - </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/GroundTruth/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/GroundTruth/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/GroundTruth/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/GroundTruth/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                     <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Opus-12 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> - </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b>  12 kbps </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Opus-12/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Opus-12/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Opus-12/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Opus-12/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Opus-24 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> - </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 24 kbps </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Opus-24/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Opus-24/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Opus-24/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Opus-24/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>HiFi-Codec-320 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 320x</b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> - </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/HiFi-320/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/HiFi-320/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/HiFi-320/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/HiFi-320/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>HiFi-Codec-240 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 240x </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> - </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/HiFi-240/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/HiFi-240/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/HiFi-240/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/HiFi-240/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Encodec-12 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 256x </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 12 kbps </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Encodec-12/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Encodec-12/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Encodec-12/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Encodec-12/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Encodec-48 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 64x </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 48 kbps </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Encodec-48/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Encodec-48/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Encodec-48/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Encodec-48/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>AudioDec </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 300x </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 24 kbps</b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/AudioDec/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/AudioDec/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/AudioDec/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/AudioDec/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>MULTI-AUDIODEC (ours) </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 3150x </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <b> 12.6 kbps </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Multi-3/reverb/p293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Multi-3/reverb/p293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Multi-3/reverb/p345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                             <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Outputs_Single/Multi-3/reverb/p376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>                   
+                          
+                    
+        
+                    
+                </table>
+            </div>
+
+            <div id="demos">
+                <h3>Audio Demos - Two Speakers</h3>
+                
+                <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Audio Codec  </th>                        
+                            <th style="text-align:center;">Reverb Sample-1</th>
+                            <th style="text-align:center;">Clean Speaker-1</th>
+                            <th style="text-align:center;">Clean Speaker-2</th>
+                            <th style="text-align:center;"></th>
+                            <th style="text-align:center;"></th>                    
+                            <th style="text-align:center;">Reverb Sample-2</th>
+                            <th style="text-align:center;">Clean Speaker-1</th>
+                            <th style="text-align:center;">Clean Speaker-2</th>                       
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Ground Truth </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/GroundTruth/reverb/aap247_058.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/GroundTruth/clean1/aap247_058.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/GroundTruth/clean2/aap247_058.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                            <td style="padding:0 10px 0 10px;"> |
+                            </td>
+                            <td style="padding:0 10px 0 10px;"> |
+                            </td>
+                            
+
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/GroundTruth/reverb/aap274_136.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/GroundTruth/clean1/aap274_136.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/GroundTruth/clean2/aap274_136.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Opus-12 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/opus-12/reverb/aap247_058.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                            </td>
+                            
+                            <td style="padding:0 10px 0 10px;"> |
+                            </td>
+                            <td style="padding:0 10px 0 10px;"> |
+                            </td>
+                            
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/opus-12/reverb/aap274_136.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                            </td>
+                            
+                        </tr>        
+                    </tbody>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Encodec-12 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/Encodec-12/reverb/aap247_058.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                            </td>
+                           
+                            <td style="padding:0 10px 0 10px;"> |
+                            </td>
+                            <td style="padding:0 10px 0 10px;"> |
+                            </td>
+                            
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/Encodec-12/reverb/aap274_136.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                            </td>
+                            
+                        </tr>        
+                    </tbody> 
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>MULTI-AUDIODEC (ours) </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/Multi-358/reverb/aap247_058.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/Multi-358/clean1/aap247_058.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/Multi-358/clean2/aap247_058.wav" type="audio/wav">
+                                </audio>
+                            </td>
+
+                            
+                            <td style="padding:0 10px 0 10px;"> |
+                            </td> 
+                            <td style="padding:0 10px 0 10px;"> |
+                            </td>
+                            
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/Multi-358/reverb/aap274_136.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/Multi-358/clean1/aap274_136.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 210px;">
+                                    <source src="Output_Two/Multi-358/clean2/aap274_136.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>        
+                    </tbody>  
+                                                                          
+                </table>
+            </div>
+
+             
+
+            <div id="demos">
+                <h2>Ablation</h2>
+                <h3>Audio Demos - Single Speaker</h3>
+                
+                <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Audio Codec  </th>
+                            <th style="text-align:center;">Clean-1</th>
+                            <th style="text-align:center;">Reverb-1</th>
+                            <th style="text-align:center;">Clean-2</th>
+                            <th style="text-align:center;">Reverb-2</th> 
+                            <th style="text-align:center;">Clean-3</th>
+                            <th style="text-align:center;">Reverb-3</th> 
+                            <th style="text-align:center;">Clean-4</th>
+                            <th style="text-align:center;">Reverb-4</th>                          
+                        </tr>
+                    </thead>
+
+                     <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>MULTI-AUDIODEC-V1 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/GroundTruth/clean/p293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/GroundTruth/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/GroundTruth/clean/p293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/GroundTruth/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/GroundTruth/clean/p345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/GroundTruth/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/GroundTruth/clean/p376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/GroundTruth/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody> 
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>MULTI-AUDIODEC-V1 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-1/clean/p293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-1/reverb/aap293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-1/clean/p293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-1/reverb/aap293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-1/clean/p345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-1/reverb/aap345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-1/clean/p376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-1/reverb/aap376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>MULTI-AUDIODEC-V2 </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-2/clean/p293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-2/reverb/p293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-2/clean/p293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-2/reverb/p293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-2/clean/p345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-2/reverb/p345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-2/clean/p376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-2/reverb/p376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody> 
+
+                     <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>MULTI-AUDIODEC (OURS) </b>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-3/clean/p293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-3/reverb/p293_086.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-3/clean/p293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-3/reverb/p293_229.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-3/clean/p345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-3/reverb/p345_160.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-3/clean/p376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 10px 0 10px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 150px;">
+                                    <source src="Outputs_Single/Multi-3/reverb/p376_087.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+        
+                    </tbody>  
+
+                                     
+                          
+                    
+        
+                    
+                </table>
+            </div>
+
+            <div id="spectrogram">
+                <h3><b>Spetrogram Demos of MULTI-AUDIODEC - Single Speaker</b></h3>
+                
+                <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
+                <table class="spectogram_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Reverb Sample </th>                     
+                            <th style="text-align:center;">Spetrogram of Ground truth BIR</th>
+                            <th style="text-align:center;">Spetrogram of estimated BIR</th>                          
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Reverb Sample-1</b>
+                            </td>
+                            
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Outputs_Single/GroundTruth/RIR_image/p293_086.png" width="480px">
+                            </td>
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Outputs_Single/Multi-3/RIR_image/p293_086.png" width="480px">
+                            </td>
+                           
+                    </tbody>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Reverb Sample-2</b>
+                            </td>
+                            
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Outputs_Single/GroundTruth/RIR_image/p293_229.png" width="480px">
+                            </td>
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Outputs_Single/Multi-3/RIR_image/p293_229.png" width="480px">
+                            </td>
+                           
+                    </tbody>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Reverb Sample-3</b>
+                            </td>
+                            
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Outputs_Single/GroundTruth/RIR_image/p345_160.png" width="480px">
+                            </td>
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Outputs_Single/Multi-3/RIR_image/p345_160.png" width="480px">
+                            </td>
+                           
+                    </tbody>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Reverb Sample-4</b>
+                            </td>
+                            
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Outputs_Single/GroundTruth/RIR_image/p376_087.png" width="480px">
+                            </td>
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Outputs_Single/Multi-3/RIR_image/p376_087.png" width="480px">
+                            </td>
+                           
+                    </tbody>
+                                  
+                </table>
+            </div>
+        
+         <div id="spectrogram">
+                <h3><b>Spetrogram Demos of MULTI-AUDIODEC (Sample-1) - Two Speaker</b></h3>
+                
+                <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
+                <table class="spectogram_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Speaker </th>                     
+                            <th style="text-align:center;">Spetrogram of Ground truth BIR</th>
+                            <th style="text-align:center;">Spetrogram of estimated BIR</th>                          
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Speaker-1</b>
+                            </td>
+                            
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Output_Two/GroundTruth/RIR1_image/aap274_136.png" width="480px">
+                            </td>
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Output_Two/Multi-358/RIR1_image/aap274_136.png" width="480px">
+                            </td>
+                           
+                    </tbody>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td style="padding:0 10px 0 10px;">
+                                <b>Speaker-2</b>
+                            </td>
+                            
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Output_Two/GroundTruth/RIR2_image/aap274_136.png" width="480px">
+                            </td>
+                            <td style="padding:0 100px 0 100px;">
+                                <img src="Output_Two/Multi-358/RIR2_image/aap274_136.png" width="480px">
+                            </td>
+                           
+                    </tbody>
+
+                   
+                                  
+                </table>
+            </div>   
+
+        <div id="footer">
+            <div>
+                <i>&copy October 2023</i><br>
+		<img src="img/tencent_icon.png" height="210px" alt="">
+        <img src="img/umd_icon.png" height="210px" alt="">
+            </div>
+	    <!--
+			<div style="display:inline-block;width:210px;">
+	            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=nTaFtZPYUn89zwQhD9zpswUR2BW5OqbAcpOeLX3H118&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
+			</div>
+	     -->
+		</div>
+        
+
+    
+    </body>
+</html>
