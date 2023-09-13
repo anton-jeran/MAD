@@ -6,7 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
         
-        <meta name="description" content="MULTI-AUDIODEC: BINAURAL HIGH-FIDELITY NEURAL AUDIO CODEC FOR OVERLAPPED SPEECH - Audio Demo">
+        <meta name="description" content="M3-AUDIODEC: MULTI-CHANNEL MULTI-TALKER MULTI-SPATIAL NEURAL AUDIO CODEC - Audio Demo">
         <meta name="author" content="Anton Jeran Ratnarajah">
         
 	    <title>MULTI-AUDIODEC - Audio Demo</title>
@@ -28,10 +28,16 @@
     
     <body>
         <div id="container">
-            <div id="paper_title"> <h1>MULTI-AUDIODEC: BINAURAL HIGH-FIDELITY NEURAL AUDIO CODEC FOR OVERLAPPED SPEECH</h1> </div>
+            <div id="paper_title"> <h1>M3-AUDIODEC: MULTI-CHANNEL MULTI-TALKER MULTI-SPATIAL NEURAL AUDIO CODEC</h1> </div>
             <div id="paper_authors"> <h3><b>Authors:</b> Anton Ratnarajah, Shi-Xiong Zhang, Yi Luo and Dong Yu</h3></div>
             <div id="paper_title"> <h2><a href="">Paper</a><a> | </a><a href="https://github.com/anton-jeran/MULTI-AUDIODEC">Code</a>  </a> </h2> </div>
-            <div id="paper_abstract"> <b>Abstract:</b> We present a novel neural audio codec to efficiently compress binaural speech with an overlap of two speakers (MULTI-AUDIODEC). Our proposed network can decode speech content and the binaural acoustic effects of individual speakers from the compressed code of overlapped binaural speech. We present a novel architecture to compress the speech content and binaural acoustic effects separately. Our proposed approach can reduce the bandwidth of compressing two-channel speech by 48% compared to compressing each channel of binaural speech separately. We present a method to estimate masks for each speaker. The masked compressed code is passed to the speech decoder network to reconstruct the clean speech content of each speaker. Our MULTI-AUDIODEC, operating at 12.6 kbps, outperforms Opus at 24 kbps and AudioDec at 24 kbps by up to 37% and 52%, respectively, in preserving binaural acoustic features. We use speech enhancement and room acoustics metrics to evaluate the accuracy of estimated clean speech and binaural acoustic effects from our MULTI-AUDIODEC. </div>
+            <div id="paper_abstract"> <b>Abstract:</b> We introduce M3-AUDIODEC, an innovative neural spatial audio codec designed for efficient compression of multi-channel (binaural) speech in both single and multi-speaker scenarios while retaining the spatial location information of each speaker. This model boasts versatility, allowing configuration and training tailored to a predetermined set of multi-channel, multi-speaker, and multi-spatial overlapping speech conditions.
+Key contributions are as follows:
+1) Previous neural codecs were extended from single to multi-channel audios.
+2) The ability of our proposed model to compress and decode for overlapping speech.
+3) A groundbreaking architecture that compresses speech content and spatial cues separately, ensuring the preservation of each speaker's spatial context after decoding.
+4) M3-AUDIODEC's proficiency in reducing the bandwidth for compressing two-channel speech by 48% when compared to individual binaural channel compression. Impressively, at a 12.6 kbps operation, it outperforms Opus at 24 kbps and AudioDec at 24 kbps by 37% and 52%, respectively. In our assessment, we employed speech enhancement and room acoustic metrics to ascertain the accuracy of clean speech and spatial cue estimates from M3-AUDIODEC. 
+ </div>
 
            
         <!--     <div id="code">
