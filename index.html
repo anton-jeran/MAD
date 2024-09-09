@@ -9,7 +9,7 @@
         <meta name="description" content="BANC: Towards Efficient Binaural Audio Neural Codec for Overlapping Speech - Audio Demo">
         <meta name="author" content="Anton Jeran Ratnarajah">
         
-	    <title>M3-AUDIODEC - Audio Demo</title>
+	    <title>BANC - Audio Demo</title>
         
         <!-- Bootflat CSS -->
         <link rel="stylesheet" href="css/bootflat.css">
@@ -28,10 +28,10 @@
     
     <body>
         <div id="container">
-            <div id="paper_title"> <h1>M3-AUDIODEC: MULTI-CHANNEL MULTI-SPEAKER MULTI-SPATIAL NEURAL AUDIO CODEC</h1> </div>
+            <div id="paper_title"> <h1>BANC: Towards Efficient Binaural Audio Neural Codec for Overlapping Speech</h1> </div>
             <div id="paper_authors"> <h3><b>Authors:</b> Anton Ratnarajah, Shi-Xiong Zhang and Dong Yu</h3></div>
             <div id="paper_title"> <h2><a href="https://arxiv.org/pdf/2309.07416.pdf">Paper</a><a> | </a><a href="https://github.com/anton-jeran/MULTI-AUDIODEC">Code</a>  </a> </h2> </div>
-            <div id="paper_abstract"> <b>Abstract:</b>  We introduce M3-AUDIODEC, an innovative neural spatial audio codec designed for efficient compression of multi-channel (binaural) speech in both single and multi-speaker scenarios, while retaining the spatial location information of each speaker. This model boasts versatility, allowing configuration and training tailored to a predetermined set of multi-channel, multi-speaker, and multi-spatial overlapping speech conditions. Key contributions are as follows: 1) Previous neural codecs are extended from single to multi-channel audios. 2) The ability of our proposed model to compress and decode for overlapping speech. 3) A groundbreaking architecture that compresses speech content and spatial cues separately, ensuring the preservation of each speaker's spatial context after decoding. 4) M3-AUDIODEC's proficiency in reducing the bandwidth for compressing two-channel speech by 48% when compared to individual binaural channel compression. Impressively, at a 12.6 kbps operation, it outperforms Opus at 24 kbps and AUDIODEC at 24 kbps by 37% and 52%, respectively. In our assessment, we employed speech enhancement and room acoustic metrics to ascertain the accuracy of clean speech and spatial cue estimates from M3-AUDIODEC
+            <div id="paper_abstract"> <b>Abstract:</b>  We introduce BANC, a neural binaural audio codec designed for efficient speech compression in single and two-speaker scenarios while preserving the spatial location information of each speaker. This highly versatile model allows configuration and training tailored to one or two speakers with different spatial locations. Our key contributions are as follows: 1)The ability of our proposed model to compress and decode overlapping speech. 2) A novel architecture that compresses speech content and spatial cues separately, ensuring the preservation of each speaker's spatial context after decoding. 3) BANC's proficiency in reducing the bandwidth required for compressing binaural speech by 48\% compared to compressing individual binaural channels. In our evaluation, we employed speech enhancement, room acoustics, and perceptual metrics to assess the accuracy of BANC's clean speech and spatial cue estimates
  </div>
 
            
@@ -349,7 +349,7 @@
                     <tbody>
                         <tr style="border-top:1px solid black">
                             <td style="padding:0 10px 0 10px;">
-                                <b>M3-AUDIODEC (ours) </b>
+                                <b>BANC (ours) </b>
                             </td>
                             <td style="padding:0 10px 0 10px;">
                                 <b> 3150x </b>
@@ -526,7 +526,7 @@
                     <tbody>
                         <tr style="border-top:1px solid black">
                             <td style="padding:0 10px 0 10px;">
-                                <b>M3-AUDIODEC (ours) </b>
+                                <b>BANC (ours) </b>
                             </td>
                             <td style="padding:0 10px 0 10px;">
                                 <audio controls class="audio-player" preload="metadata" style="width: 210px;">
@@ -645,7 +645,7 @@
                     <tbody>
                         <tr style="border-top:1px solid black">
                             <td style="padding:0 10px 0 10px;">
-                                <b>M3-AUDIODEC (ours) </b>
+                                <b>BANC (ours) </b>
                             </td>
                              <td style="padding:0 10px 0 10px;">
                                 <audio controls class="audio-player" preload="metadata" style="width: 210px;">
@@ -766,7 +766,7 @@
                     <tbody>
                         <tr style="border-top:1px solid black">
                             <td style="padding:0 10px 0 10px;">
-                                <b>M3-AUDIODEC-V1 </b>
+                                <b>BANC-V1 </b>
                             </td>
                             <td style="padding:0 10px 0 10px;">
                                 <audio controls class="audio-player" preload="metadata" style="width: 150px;">
@@ -816,7 +816,7 @@
                     <tbody>
                         <tr style="border-top:1px solid black">
                             <td style="padding:0 10px 0 10px;">
-                                <b>M3-AUDIODEC-V2 </b>
+                                <b>BANC-V2 </b>
                             </td>
                             <td style="padding:0 10px 0 10px;">
                                 <audio controls class="audio-player" preload="metadata" style="width: 150px;">
@@ -866,7 +866,7 @@
                      <tbody>
                         <tr style="border-top:1px solid black">
                             <td style="padding:0 10px 0 10px;">
-                                <b>M3-AUDIODEC (OURS) </b>
+                                <b>BANC (OURS) </b>
                             </td>
                             <td style="padding:0 10px 0 10px;">
                                 <audio controls class="audio-player" preload="metadata" style="width: 150px;">
@@ -922,7 +922,7 @@
             </div>
 
             <div id="spectrogram">
-                <h3><b>Spetrogram Demos of M3-AUDIODEC - Single Speaker</b></h3>
+                <h3><b>Spetrogram Demos of BANC - Single Speaker</b></h3>
                 
                 <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
                 <table class="spectogram_demos">
@@ -998,7 +998,7 @@
             </div>
         
          <div id="spectrogram">
-                <h3><b>Spetrogram Demos of M3-AUDIODEC (Reverb Sample-1) - Two Speaker</b></h3>
+                <h3><b>Spetrogram Demos of BANC (Reverb Sample-1) - Two Speaker</b></h3>
                 
                 <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
                 <table class="spectogram_demos">
@@ -1046,7 +1046,7 @@
             </div>   
 
         <div id="spectrogram">
-                <h3><b>Spetrogram Demos of M3-AUDIODEC (Training Reverb Sample-1) - Two Speaker</b></h3>
+                <h3><b>Spetrogram Demos of BANC (Training Reverb Sample-1) - Two Speaker</b></h3>
                 
                 <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
                 <table class="spectogram_demos">
